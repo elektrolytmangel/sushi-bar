@@ -1,0 +1,15 @@
+.sb-prog-bar {
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+}
+
+.sb-progress {
+  background-image: url('../images/sushi-03-nigiri-maguro.svg'), linear-gradient(to right, red, orange, yellow, green, blue, violet);
+  /*, url('../images/sushi-02-nigiri-ebi.svg'), url('../images/sushi-03-nigiri-maguro.svg'), url('../images/sushi-03-nigiri-tamago.svg');*/
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: repeat-x, no-repeat;
+  height: 100%;
+  transition: width 1s;
+}
