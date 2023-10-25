@@ -29,7 +29,7 @@ class ProgressBar extends HTMLElement {
 
   attributeChangedCallback(name: any, oldValue: any, newValue: any) {
     if (oldValue !== newValue) {
-      this.updateStyle();
+      this.updateStyleValue(name, newValue);
     }
   }
 
@@ -47,6 +47,16 @@ class ProgressBar extends HTMLElement {
         `width: ${this.width}; height: ${this.height}`
       );
     }, 1);
+  }
+
+  updateStyleValue(name: string, value: any) {
+    if (name === "progress") {
+      this.progress.setAttribute("style", `${name}: ${value}`);
+    }
+
+    if (name === "width" || name === "height") {
+      this.background.setAttribute("style", `${name}: ${value}`);
+    }
   }
 
   loadCss() {
