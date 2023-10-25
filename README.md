@@ -9,7 +9,7 @@ A simple progress bar for js in the style of an sushi-bar.
 In your main component i.e. index.js:
 
 ```
-import 'sushi-bar.js'
+import 'sushi-bar'
 ```
 
 then use as follow:

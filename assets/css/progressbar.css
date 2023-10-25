@@ -1,9 +1,11 @@
 .sb-prog-bar {
   background-color: transparent;
-  height: 100%;
-  width: 100%;
   border: 1px solid #999999;
   border-radius: 5rem;
+  
+  /*only fallback*/
+  height: 100%;
+  width: 100%;
 }
 
 .sb-progress {
