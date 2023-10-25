@@ -9,7 +9,7 @@ class ProgressBar extends HTMLElement {
 
     this.shadow = this.attachShadow({ mode: "open" });
     this.shadow.innerHTML =
-      '<link rel="stylesheet" href="./assets/css/progressbar.css">';
+      '<link rel="stylesheet" href="./assets/css/progressbar.css"> mime-type="text/css">';
 
     // Create an element to add into the shadow DOM, the base
     this.background = document.createElement("div");
