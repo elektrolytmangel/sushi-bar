@@ -1,15 +1,19 @@
 .sb-prog-bar {
   background-color: transparent;
-  height: 100px;
+  height: 100%;
   width: 100%;
+  border: 1px solid #999999;
+  border-radius: 5rem;
 }
 
 .sb-progress {
-  background-image: url('../images/sushi-03-nigiri-maguro.svg'), linear-gradient(to right, red, orange, yellow, green, blue, violet);
+  background-image: url('../images/sushi-03-nigiri-maguro.svg'), linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255,0.5), rgba(238, 130, 238, 0.5));
   /*, url('../images/sushi-02-nigiri-ebi.svg'), url('../images/sushi-03-nigiri-maguro.svg'), url('../images/sushi-03-nigiri-tamago.svg');*/
   background-size: auto 100%;
   background-position: right;
   background-repeat: repeat-x, no-repeat;
   height: 100%;
   transition: width 1s;
+  border-radius: 5rem;
+  border: 0 solid transparent;
 }
